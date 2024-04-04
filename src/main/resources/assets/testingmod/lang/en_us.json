@@ -3,6 +3,9 @@
   "item.testingmod.sad_face": "Sad Face",
   "item.testingmod.plat_ingot": "Platinium Ingot",
 
+  "block.testingmod.plat_block": "Platinium Block",
+  "block.testingmod.plat_ore": "Platinium Ore",
+
   "itemgroup.faces": "Faces",
   "itemgroup.platinium": "Platinium"
 }

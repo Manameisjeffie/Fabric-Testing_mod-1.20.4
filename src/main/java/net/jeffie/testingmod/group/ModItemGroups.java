@@ -2,6 +2,7 @@ package net.jeffie.testingmod.group;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jeffie.testingmod.TestingMod;
+import net.jeffie.testingmod.block.ModBlocks;
 import net.jeffie.testingmod.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -24,6 +25,8 @@ public class ModItemGroups
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.platinium"))
                     .icon(() -> new ItemStack(ModItems.PLAT_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.PLAT_INGOT);
+                        entries.add(ModBlocks.PLAT_BLOCK);
+                        entries.add(ModBlocks.PLAT_ORE);
                     }).build());
 
     public static void registerItemGroups()

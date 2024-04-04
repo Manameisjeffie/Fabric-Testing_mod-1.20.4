@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testingmod:block/plat_block"
+    }
+  }
+}
