@@ -1,10 +1,10 @@
-package net.jeffie.testingmod.item;
+package net.jeffie.testingmod.group;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.jeffie.testingmod.TestingMod;
+import net.jeffie.testingmod.item.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -18,6 +18,12 @@ public class ModItemGroups
                     .icon(() -> new ItemStack(ModItems.HAPPY_FACE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HAPPY_FACE);
                         entries.add(ModItems.SAD_FACE);
+                    }).build());
+    public static final ItemGroup PLAT_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TestingMod.MOD_ID, "platinium"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.platinium"))
+                    .icon(() -> new ItemStack(ModItems.PLAT_INGOT)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.PLAT_INGOT);
                     }).build());
 
     public static void registerItemGroups()

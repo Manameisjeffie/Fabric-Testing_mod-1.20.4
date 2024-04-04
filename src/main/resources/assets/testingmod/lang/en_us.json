@@ -1,6 +1,8 @@
 {
   "item.testingmod.happy_face": "Happy Face",
   "item.testingmod.sad_face": "Sad Face",
+  "item.testingmod.plat_ingot": "Platinium Ingot",
 
-  "itemgroup.faces": "Faces"
+  "itemgroup.faces": "Faces",
+  "itemgroup.platinium": "Platinium"
 }
