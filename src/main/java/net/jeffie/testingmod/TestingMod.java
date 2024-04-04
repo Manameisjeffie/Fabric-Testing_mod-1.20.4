@@ -18,6 +18,6 @@ public class TestingMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Don't be rude");
+		LOGGER.info("Don't be rude, ok");
 	}
 }
