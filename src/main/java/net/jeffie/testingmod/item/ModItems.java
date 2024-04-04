@@ -9,8 +9,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems
 {
-    public static final Item HAPPY_FACE = registerItem("happy_face", new Item(new FabricItemSettings()));
-    public static final Item SAD_FACE = registerItem("sad_face", new Item(new FabricItemSettings()));
+    public static final Item HAPPY_FACE = registerItem("happy_face", new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item SAD_FACE = registerItem("sad_face", new Item(new FabricItemSettings().maxCount(1)));
 
     public static final Item PLAT_INGOT = registerItem("plat_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_PLAT = registerItem("raw_plat", new Item(new FabricItemSettings()));
