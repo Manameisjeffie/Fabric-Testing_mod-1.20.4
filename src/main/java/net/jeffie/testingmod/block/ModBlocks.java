@@ -22,7 +22,12 @@ public class ModBlocks
             .requiresTool()
             .strength(7.0f, 8.0f)
             .sounds(BlockSoundGroup.METAL)));
-    public static final Block PLAT_ORE = registerBlock("plat_ore", new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), FabricBlockSettings.create().mapColor(MapColor.STONE_GRAY).instrument(Instrument.BASEDRUM).requiresTool().strength(3.0f, 3.0f)));
+    public static final Block PLAT_ORE = registerBlock("plat_ore", new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), FabricBlockSettings.create()
+            .mapColor(MapColor.STONE_GRAY)
+            .instrument(Instrument.BASEDRUM)
+            .requiresTool()
+            .sounds(BlockSoundGroup.STONE)
+            .strength(3.0f, 3.0f)));
 
     private static Item registerBlockItem(String name, Block block)
     {
