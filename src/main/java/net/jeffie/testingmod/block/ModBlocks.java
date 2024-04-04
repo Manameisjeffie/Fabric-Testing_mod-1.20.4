@@ -27,7 +27,7 @@ public class ModBlocks
             .instrument(Instrument.BASEDRUM)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE)
-            .strength(3.0f, 3.0f)));
+            .strength(4.5f, 4.5f)));
 
     private static Item registerBlockItem(String name, Block block)
     {

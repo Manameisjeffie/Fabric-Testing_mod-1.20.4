@@ -25,6 +25,7 @@ public class ModItemGroups
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.platinium"))
                     .icon(() -> new ItemStack(ModItems.PLAT_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.PLAT_INGOT);
+                        entries.add(ModItems.RAW_PLAT);
                         entries.add(ModBlocks.PLAT_BLOCK);
                         entries.add(ModBlocks.PLAT_ORE);
                     }).build());
