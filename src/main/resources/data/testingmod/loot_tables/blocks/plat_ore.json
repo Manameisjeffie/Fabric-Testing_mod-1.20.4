@@ -35,31 +35,30 @@
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "testingmod:happy_face",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "testingmod:happy_face",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:efficiency",
-                        "levels": {
-                          "min": 5,
-                          "max": 5
-                        }
-                      }
-                    ]
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:efficiency",
+                    "levels": 5
                   }
-                }
-              ]
+                ]
+              }
             }
           ]
         }
