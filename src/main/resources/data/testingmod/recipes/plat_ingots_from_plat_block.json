@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "testingmod:plat_block"
+    }
+  ],
+  "result": {
+    "item": "testingmod:plat_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "platinium",
+  "ingredient": {
+    "item": "testingmod:plat_ore"
+  },
+  "result": "testingmod:plat_ingot"
+}
