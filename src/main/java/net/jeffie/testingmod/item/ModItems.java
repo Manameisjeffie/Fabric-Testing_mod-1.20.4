@@ -2,6 +2,7 @@ package net.jeffie.testingmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.jeffie.testingmod.TestingMod;
+import net.jeffie.testingmod.item.custom.OreDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +15,7 @@ public class ModItems
 
     public static final Item PLAT_INGOT = registerItem("plat_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_PLAT = registerItem("raw_plat", new Item(new FabricItemSettings()));
+    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item)
     {

@@ -28,6 +28,7 @@ public class ModItemGroups
                         entries.add(ModItems.RAW_PLAT);
                         entries.add(ModBlocks.PLAT_BLOCK);
                         entries.add(ModBlocks.PLAT_ORE);
+                        entries.add(ModItems.ORE_DETECTOR);
                     }).build());
 
     public static void registerItemGroups()
