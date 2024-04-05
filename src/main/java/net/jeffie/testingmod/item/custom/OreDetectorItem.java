@@ -1,6 +1,7 @@
 package net.jeffie.testingmod.item.custom;
 
 import net.jeffie.testingmod.block.ModBlocks;
+import net.jeffie.testingmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -48,7 +49,7 @@ public class OreDetectorItem extends Item {
                         BlockState blockState = world.getBlockState(bPos);
                         if (isOre(blockState))
                         {
-                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in X: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
+                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in §lX: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
                             user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
                         }
                     }
@@ -71,7 +72,7 @@ public class OreDetectorItem extends Item {
 
     private boolean isOre(BlockState state)
     {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.GOLD_ORE) || state.isOf(ModBlocks.PLAT_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.EMERALD_ORE) || state.isOf(Blocks.DEEPSLATE_EMERALD_ORE);
+        return state.isIn(ModTags.Blocks.ORE_DETECTOR_DETECTABLE_BLOCKS);
     }
 
     private int chooseColor(BlockState state)
