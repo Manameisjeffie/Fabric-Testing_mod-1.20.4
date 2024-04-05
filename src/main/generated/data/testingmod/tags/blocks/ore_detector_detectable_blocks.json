@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testingmod:plat_ore",
+    "#minecraft:iron_ores",
+    "#minecraft:gold_ores",
+    "#minecraft:diamond_ores"
+  ]
+}

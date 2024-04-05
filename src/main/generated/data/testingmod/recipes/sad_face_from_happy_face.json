@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "faces",
+  "ingredients": [
+    {
+      "item": "testingmod:happy_face"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "testingmod:sad_face"
+  }
+}

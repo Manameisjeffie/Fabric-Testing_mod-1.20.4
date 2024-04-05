@@ -49,7 +49,7 @@ public class OreDetectorItem extends Item {
                         BlockState blockState = world.getBlockState(bPos);
                         if (isOre(blockState))
                         {
-                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in §lX: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
+                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in §l§nX: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
                             user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
                         }
                     }
