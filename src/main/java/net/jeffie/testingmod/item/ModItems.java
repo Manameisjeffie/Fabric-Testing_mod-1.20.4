@@ -15,7 +15,7 @@ public class ModItems
 
     public static final Item PLAT_INGOT = registerItem("plat_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_PLAT = registerItem("raw_plat", new Item(new FabricItemSettings()));
-    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings()));
+    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings(), 3));
 
     private static Item registerItem(String name, Item item)
     {
