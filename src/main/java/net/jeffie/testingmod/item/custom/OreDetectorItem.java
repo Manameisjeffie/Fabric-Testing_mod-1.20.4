@@ -5,21 +5,21 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.MinecartItem;
 import net.minecraft.registry.Registries;
-import net.minecraft.screen.slot.Slot;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.ColorResolver;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class OreDetectorItem extends Item {
 
@@ -56,6 +56,17 @@ public class OreDetectorItem extends Item {
             }
         }
         return TypedActionResult.success(user.getStackInHand(hand));
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if (Screen.hasShiftDown())
+            tooltip.add(Text.literal("It Detects Ore's in a " + oreDetectR+"x"+oreDetectR+"x"+oreDetectR + " range around the player (the player is in it's center)").withColor(Colors.RED));
+        else
+        {
+            tooltip.add(Text.literal("Press Shift For More Info").withColor(Colors.YELLOW));
+        }
+        super.appendTooltip(stack, world, tooltip, context);
     }
 
     private boolean isOre(BlockState state)
