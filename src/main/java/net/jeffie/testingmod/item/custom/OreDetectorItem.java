@@ -11,10 +11,12 @@ import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.MinecartItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.ColorResolver;
@@ -46,7 +48,7 @@ public class OreDetectorItem extends Item {
                         BlockState blockState = world.getBlockState(bPos);
                         if (isOre(blockState))
                         {
-                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in X: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(blockState.getMapColor(world.getChunk(bPos), bPos).color), false);
+                            user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in X: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
                             user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
                         }
                     }
@@ -59,5 +61,17 @@ public class OreDetectorItem extends Item {
     private boolean isOre(BlockState state)
     {
         return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.GOLD_ORE) || state.isOf(ModBlocks.PLAT_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.EMERALD_ORE) || state.isOf(Blocks.DEEPSLATE_EMERALD_ORE);
+    }
+
+    private int chooseColor(BlockState state)
+    {
+        Block block = state.getBlock();
+        return switch (Registries.BLOCK.getId(block).getPath()) {
+            case "diamond_ore", "deepslate_diamond_ore" -> MapColor.DIAMOND_BLUE.color;
+            case "gold_ore", "deepslate_gold_ore" -> MapColor.GOLD.color;
+            case "iron_ore", "deepslate_iron_ore" -> MapColor.IRON_GRAY.color;
+            case "emerald_ore", "deepslate_emerald_ore" -> MapColor.EMERALD_GREEN.color;
+            default -> Colors.WHITE;
+        };
     }
 }
