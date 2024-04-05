@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
@@ -46,6 +47,7 @@ public class OreDetectorItem extends Item {
                         if (isOre(blockState))
                         {
                             user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in X: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(blockState.getMapColor(world.getChunk(bPos), bPos).color), false);
+                            user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
                         }
                     }
                 }
