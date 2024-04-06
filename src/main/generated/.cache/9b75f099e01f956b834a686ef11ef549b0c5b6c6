@@ -1,4 +1,4 @@
-// 1.20.4	2024-04-05T22:27:57.1884572	TestingMod/Tags for minecraft:block
+// 1.20.4	2024-04-06T03:29:59.569547	TestingMod/Tags for minecraft:block
 b140a68a1706917c7ee80dfe458cc2805cb19c1b data\testingmod\tags\blocks\ore_detector_detectable_blocks.json
 ab9c07e5ddf95c8544e1860381e4e9f638c3c2a1 data\minecraft\tags\blocks\needs_diamond_tool.json
 1a1a125e7c56638fc5e1696685ac2b9d67dcc575 data\minecraft\tags\blocks\mineable\pickaxe.json

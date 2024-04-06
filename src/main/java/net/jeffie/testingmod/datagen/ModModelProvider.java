@@ -25,6 +25,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_PLAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.HAPPY_FACE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAD_FACE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORE_DETECTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORE_DETECTOR, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PLAT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLAT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLAT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLAT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLAT_HOE, Models.HANDHELD);
     }
 }

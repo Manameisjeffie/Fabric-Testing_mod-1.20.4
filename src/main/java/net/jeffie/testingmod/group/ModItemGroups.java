@@ -29,6 +29,12 @@ public class ModItemGroups
                         entries.add(ModBlocks.PLAT_BLOCK);
                         entries.add(ModBlocks.PLAT_ORE);
                         entries.add(ModItems.ORE_DETECTOR);
+
+                        entries.add(ModItems.PLAT_SWORD);
+                        entries.add(ModItems.PLAT_PICKAXE);
+                        entries.add(ModItems.PLAT_AXE);
+                        entries.add(ModItems.PLAT_SHOVEL);
+                        entries.add(ModItems.PLAT_HOE);
                     }).build());
 
     public static void registerItemGroups()

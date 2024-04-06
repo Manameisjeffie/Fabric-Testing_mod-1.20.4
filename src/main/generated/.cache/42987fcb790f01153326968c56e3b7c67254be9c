@@ -1,12 +1,17 @@
-// 1.20.4	2024-04-05T22:27:57.189457	TestingMod/Model Definitions
+// 1.20.4	2024-04-06T03:29:59.5705469	TestingMod/Model Definitions
 6dd36af324ae3fe3a7830ecb16998b54c7b4f738 assets\testingmod\models\block\plat_ore.json
+f78cc7ed719fcc7e08c520b39ea63ae95e524c2f assets\testingmod\models\item\happy_face.json
+2b2a8913cb4153cf46c35ba47ca1c2c614c148f1 assets\testingmod\models\item\plat_pickaxe.json
+aac4f8dcdd5048a047ad48de00f15dc7090b2d1e assets\testingmod\models\item\plat_sword.json
+31ed2237cc4718695fee1e996a142e703da9b677 assets\testingmod\models\item\plat_axe.json
+7c365ebbdd46daff8373f5f4efa7c098335e0556 assets\testingmod\models\item\plat_hoe.json
+3517213d4d6ca977e66c3339d164e97d32413d24 assets\testingmod\models\item\raw_plat.json
+3c864cadda94c0a875b59dbe6c7278249abb47db assets\testingmod\models\item\plat_ore.json
+bdd1ae7f17b1d25f00c40d889e300472f616188f assets\testingmod\blockstates\plat_block.json
 3335765e8a818ac034c2eb63beee4ab825a891d6 assets\testingmod\models\block\plat_block.json
 936c90486bb756347bfcdfdd3fd4c748226f66f3 assets\testingmod\models\item\plat_ingot.json
-f78cc7ed719fcc7e08c520b39ea63ae95e524c2f assets\testingmod\models\item\happy_face.json
-d64d97c45dd095bcea47c46a141ec87ef596504e assets\testingmod\models\item\ore_detector.json
-7566d2d8c0977deec1eba3acd3d13b5e2dbd088c assets\testingmod\models\item\sad_face.json
+cdabd32a6a22474ed5247d37910599031b3aa1dc assets\testingmod\models\item\ore_detector.json
 69eb86686c53f4c573d15c35bea008df7d3c6c85 assets\testingmod\models\item\plat_block.json
+7566d2d8c0977deec1eba3acd3d13b5e2dbd088c assets\testingmod\models\item\sad_face.json
+af8c223376f6c348f2620d246d6895f6b1afd296 assets\testingmod\models\item\plat_shovel.json
 04ed5d67e1971a62ba5bf0b3cbeaad7d2e98709a assets\testingmod\blockstates\plat_ore.json
-3c864cadda94c0a875b59dbe6c7278249abb47db assets\testingmod\models\item\plat_ore.json
-3517213d4d6ca977e66c3339d164e97d32413d24 assets\testingmod\models\item\raw_plat.json
-bdd1ae7f17b1d25f00c40d889e300472f616188f assets\testingmod\blockstates\plat_block.json

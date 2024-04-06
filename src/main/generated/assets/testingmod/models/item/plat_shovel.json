@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "testingmod:item/ore_detector"
+    "layer0": "testingmod:item/plat_shovel"
   }
 }
