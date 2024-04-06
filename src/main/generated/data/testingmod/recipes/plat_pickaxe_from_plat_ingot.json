@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "platinium",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "testingmod:plat_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "testingmod:plat_pickaxe"
+  }
+}

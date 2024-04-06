@@ -6,6 +6,7 @@ import net.jeffie.testingmod.block.ModBlocks;
 import net.jeffie.testingmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -48,5 +49,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .group("platinium")
                 .criterion(RecipeProvider.hasItem(ModItems.RAW_PLAT), RecipeProvider.conditionsFromItem(ModItems.RAW_PLAT))
                 .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_INGOT, ModItems.RAW_PLAT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_PICKAXE)
+                .pattern("XXX")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('X', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_PICKAXE, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_AXE)
+                .pattern("XX ")
+                .pattern("XS ")
+                .pattern(" S ")
+                .input('X', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_AXE, ModItems.PLAT_INGOT));
+
     }
 }
