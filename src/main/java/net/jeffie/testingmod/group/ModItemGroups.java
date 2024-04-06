@@ -35,6 +35,11 @@ public class ModItemGroups
                         entries.add(ModItems.PLAT_AXE);
                         entries.add(ModItems.PLAT_SHOVEL);
                         entries.add(ModItems.PLAT_HOE);
+
+                        entries.add(ModItems.PLAT_HELMET);
+                        entries.add(ModItems.PLAT_CHESTPLATE);
+                        entries.add(ModItems.PLAT_LEGGINGS);
+                        entries.add(ModItems.PLAT_BOOTS);
                     }).build());
 
     public static void registerItemGroups()

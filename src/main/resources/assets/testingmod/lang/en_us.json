@@ -11,6 +11,11 @@
   "item.testingmod.plat_shovel": "Platinium Shovel",
   "item.testingmod.plat_hoe": "Platinium Hoe",
 
+  "item.testingmod.plat_helmet": "Platinium Hoe",
+  "item.testingmod.plat_chestplate": "Platinium Chestplate",
+  "item.testingmod.plat_leggings": "Platinium Leggings",
+  "item.testingmod.plat_boots": "Platinium Boots",
+
   "block.testingmod.plat_block": "Platinium Block",
   "block.testingmod.plat_ore": "Platinium Ore",
 

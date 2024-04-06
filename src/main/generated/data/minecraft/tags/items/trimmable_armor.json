@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testingmod:plat_helmet",
+    "testingmod:plat_chestplate",
+    "testingmod:plat_leggings",
+    "testingmod:plat_boots"
+  ]
+}
