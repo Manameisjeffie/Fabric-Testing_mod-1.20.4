@@ -11,11 +11,11 @@
     }
   },
   "pattern": [
-    "PP ",
-    "PS ",
+    " P ",
+    " S ",
     " S "
   ],
   "result": {
-    "item": "testingmod:plat_axe"
+    "item": "testingmod:plat_shovel"
   }
 }

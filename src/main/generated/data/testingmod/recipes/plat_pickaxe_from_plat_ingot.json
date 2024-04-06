@@ -3,15 +3,15 @@
   "category": "equipment",
   "group": "platinium",
   "key": {
+    "P": {
+      "item": "testingmod:plat_ingot"
+    },
     "S": {
       "item": "minecraft:stick"
-    },
-    "X": {
-      "item": "testingmod:plat_ingot"
     }
   },
   "pattern": [
-    "XXX",
+    "PPP",
     " S ",
     " S "
   ],

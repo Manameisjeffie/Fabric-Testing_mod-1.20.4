@@ -51,24 +51,90 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_INGOT, ModItems.RAW_PLAT));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_PICKAXE)
-                .pattern("XXX")
+                .pattern("PPP")
                 .pattern(" S ")
                 .pattern(" S ")
-                .input('X', ModItems.PLAT_INGOT)
+                .input('P', ModItems.PLAT_INGOT)
                 .input('S', Items.STICK)
                 .group("platinium")
                 .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
                 .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_PICKAXE, ModItems.PLAT_INGOT));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_AXE)
-                .pattern("XX ")
-                .pattern("XS ")
+                .pattern("PP ")
+                .pattern("PS ")
                 .pattern(" S ")
-                .input('X', ModItems.PLAT_INGOT)
+                .input('P', ModItems.PLAT_INGOT)
                 .input('S', Items.STICK)
                 .group("platinium")
                 .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
                 .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_AXE, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_SHOVEL)
+                .pattern(" P ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_SHOVEL, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_HOE)
+                .pattern(" PP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_HOE, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_SWORD)
+                .pattern(" P ")
+                .pattern(" P ")
+                .pattern(" S ")
+                .input('P', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_SWORD, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_HELMET)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                .input('P', ModItems.PLAT_INGOT)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_HELMET, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_CHESTPLATE)
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModItems.PLAT_INGOT)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_CHESTPLATE, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_LEGGINGS)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLAT_INGOT)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_LEGGINGS, ModItems.PLAT_INGOT));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_BOOTS)
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLAT_INGOT)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_BOOTS, ModItems.PLAT_INGOT));
 
     }
 }
