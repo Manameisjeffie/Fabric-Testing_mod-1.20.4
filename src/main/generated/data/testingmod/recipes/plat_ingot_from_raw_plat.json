@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "platinium",
+  "ingredients": [
+    {
+      "item": "testingmod:raw_plat"
+    },
+    {
+      "item": "testingmod:raw_plat"
+    },
+    {
+      "item": "testingmod:raw_plat"
+    },
+    {
+      "item": "testingmod:raw_plat"
+    }
+  ],
+  "result": {
+    "item": "testingmod:plat_ingot"
+  }
+}

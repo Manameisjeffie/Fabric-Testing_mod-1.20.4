@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_plat_ingot": {
+    "has_raw_plat": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testingmod:plat_ingot"
+              "testingmod:raw_plat"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:plat_ingot_from_blasting_plat_ingot"
+        "recipe": "minecraft:plat_ingot_from_raw_plat"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_plat_ingot"
+      "has_raw_plat"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:plat_ingot_from_blasting_plat_ingot"
+      "minecraft:plat_ingot_from_raw_plat"
     ]
   }
 }
