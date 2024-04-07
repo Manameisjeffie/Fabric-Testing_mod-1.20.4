@@ -1,10 +1,8 @@
 package net.jeffie.testingmod.item.custom;
 
-import net.jeffie.testingmod.block.ModBlocks;
 import net.jeffie.testingmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -51,6 +49,10 @@ public class OreDetectorItem extends Item {
                         {
                             user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in §l§nX: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
                             user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+                        }
+                        else
+                        {
+                            user.sendMessage(Text.literal("No Ore Found :c").withColor(Colors.RED), false);
                         }
                     }
                 }

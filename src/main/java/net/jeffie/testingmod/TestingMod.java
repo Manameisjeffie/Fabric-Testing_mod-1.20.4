@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.jeffie.testingmod.block.ModBlocks;
 import net.jeffie.testingmod.group.ModItemGroups;
 import net.jeffie.testingmod.item.ModItems;
+import net.jeffie.testingmod.util.ModCustomTrades;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +25,6 @@ public class TestingMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModCustomTrades.registerCustomTrades();
 	}
 }
