@@ -70,13 +70,13 @@ public class ModHammerItem extends MiningToolItem {
                 switch (blockHit.getSide().getName())
                 {
                     case "up", "down":
-                        Mine(new BlockPos(pos.getX(), pos.getZ(), pos.getY()), world);
+                        mine(new BlockPos(pos.getX(), pos.getZ(), pos.getY()), world);
                         break;
                     case "north", "south":
-                        Mine(new BlockPos(pos.getX(), pos.getY(), pos.getZ()), world);
+                        mine(new BlockPos(pos.getX(), pos.getY(), pos.getZ()), world);
                         break;
                     case "east", "west":
-                        Mine(new BlockPos(pos.getY(), pos.getZ(), pos.getX()), world);
+                        mine(new BlockPos(pos.getY(), pos.getZ(), pos.getX()), world);
                         break;
                     default:
                         break;
@@ -86,9 +86,9 @@ public class ModHammerItem extends MiningToolItem {
         return super.postMine(stack, world, state, pos, miner);
     }
 
-    public void Mine(BlockPos minePos, World world)
+    void mine(BlockPos minePos, World world)
     {
-        BlockPos curPos;
+        BlockPos curPos = null;
         String bSide = blockHit.getSide().getName();
         for (int i = minePos.getX()-((range-1)/2); i <= minePos.getX()+((range-1)/2); i++)
         {
@@ -98,27 +98,20 @@ public class ModHammerItem extends MiningToolItem {
                 {
                     case "up", "down":
                         curPos = new BlockPos(i, minePos.getZ(), j);
-                        if (!world.getBlockState(curPos).getBlock().equals(Blocks.AIR) && this.isSuitableFor(world.getBlockState(curPos)))
-                        {
-                            world.breakBlock(curPos, true);
-                        }
                         break;
                     case "north", "south":
                         curPos = new BlockPos(i, j, minePos.getZ());
-                        if (!world.getBlockState(curPos).getBlock().equals(Blocks.AIR) && this.isSuitableFor(world.getBlockState(curPos)))
-                        {
-                            world.breakBlock(curPos, true);
-                        }
                         break;
                     case "east", "west":
                         curPos = new BlockPos(minePos.getZ(), i, j);
-                        if (!world.getBlockState(curPos).getBlock().equals(Blocks.AIR) && this.isSuitableFor(world.getBlockState(curPos)))
-                        {
-                            world.breakBlock(curPos, true);
-                        }
                         break;
                     default:
                         break;
+                }
+
+                if (!world.getBlockState(curPos).getBlock().equals(Blocks.AIR) && this.isSuitableFor(world.getBlockState(curPos)))
+                {
+                    world.breakBlock(curPos, true);
                 }
             }
         }
