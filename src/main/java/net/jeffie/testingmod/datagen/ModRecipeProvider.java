@@ -90,6 +90,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
                 .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_HOE, ModItems.PLAT_INGOT));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLAT_HAMMER)
+                .pattern("PPP")
+                .pattern("PPP")
+                .pattern(" S ")
+                .input('P', ModItems.PLAT_INGOT)
+                .input('S', Items.STICK)
+                .group("platinium")
+                .criterion(RecipeProvider.hasItem(ModItems.PLAT_INGOT), RecipeProvider.conditionsFromItem(ModItems.PLAT_INGOT))
+                .offerTo(exporter, RecipeProvider.convertBetween(ModItems.PLAT_HAMMER, ModItems.PLAT_INGOT));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLAT_SWORD)
                 .pattern(" P ")
                 .pattern(" P ")

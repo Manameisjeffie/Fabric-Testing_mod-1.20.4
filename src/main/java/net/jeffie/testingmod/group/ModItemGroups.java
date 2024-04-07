@@ -35,6 +35,7 @@ public class ModItemGroups
                         entries.add(ModItems.PLAT_AXE);
                         entries.add(ModItems.PLAT_SHOVEL);
                         entries.add(ModItems.PLAT_HOE);
+                        entries.add(ModItems.PLAT_HAMMER);
 
                         entries.add(ModItems.PLAT_HELMET);
                         entries.add(ModItems.PLAT_CHESTPLATE);

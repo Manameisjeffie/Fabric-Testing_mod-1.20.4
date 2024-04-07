@@ -3,10 +3,12 @@ package net.jeffie.testingmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.jeffie.testingmod.TestingMod;
 import net.jeffie.testingmod.item.custom.ModArmorItem;
+import net.jeffie.testingmod.item.custom.ModHammerItem;
 import net.jeffie.testingmod.item.custom.OreDetectorItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 
 public class ModItems
@@ -22,6 +24,7 @@ public class ModItems
     public static final Item PLAT_AXE = registerItem("plat_axe", new AxeItem(ModToolMaterial.PLAT, 10, -2.4f, new FabricItemSettings()));
     public static final Item PLAT_SHOVEL = registerItem("plat_shovel", new ShovelItem(ModToolMaterial.PLAT, 3, -3f, new FabricItemSettings()));
     public static final Item PLAT_HOE = registerItem("plat_hoe", new HoeItem(ModToolMaterial.PLAT, 2, 0.00f, new FabricItemSettings()));
+    public static final Item PLAT_HAMMER = registerItem("plat_hammer", new ModHammerItem(4, -3f, ModToolMaterial.PLAT, BlockTags.PICKAXE_MINEABLE, new FabricItemSettings(), 3));
 
     public static final ArmorItem PLAT_HELMET = registerArmorItem("plat_helmet", new ModArmorItem(ModArmorMaterials.PLAT, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final ArmorItem PLAT_CHESTPLATE = registerArmorItem("plat_chestplate", new ArmorItem(ModArmorMaterials.PLAT, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));

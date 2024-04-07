@@ -1,4 +1,4 @@
-// 1.20.4	2024-04-06T21:12:47.6050306	TestingMod/Model Definitions
+// 1.20.4	2024-04-07T03:43:56.5132381	TestingMod/Model Definitions
 cc2fbe0eb0d2a6f919b8cd31abecc1b9fe5ad957 assets\testingmod\models\item\plat_helmet_gold_trim.json
 962694ef86c19c7027cad86ec12afc0194507220 assets\testingmod\models\item\plat_leggings_diamond_trim.json
 23df69170e50b7d3710b133f34505f02bcd74f6d assets\testingmod\models\item\plat_chestplate_amethyst_trim.json
@@ -15,6 +15,7 @@ cdabd32a6a22474ed5247d37910599031b3aa1dc assets\testingmod\models\item\ore_detec
 257c812ecd8985c8104836728653d6e583169d9a assets\testingmod\models\item\plat_helmet_netherite_trim.json
 9ad4b0e6601cca067881f016f396646bf0d94620 assets\testingmod\models\item\plat_chestplate_iron_trim.json
 8668d8e2765623c1749a5ecb597aa3b637f4bee1 assets\testingmod\models\item\plat_helmet_iron_trim.json
+00b9b80044130e93cfa2b1cc6af54e362459e753 assets\testingmod\models\item\plat_hammer.json
 f78cc7ed719fcc7e08c520b39ea63ae95e524c2f assets\testingmod\models\item\happy_face.json
 2b2a8913cb4153cf46c35ba47ca1c2c614c148f1 assets\testingmod\models\item\plat_pickaxe.json
 fc2b6f506f938cfd99c5a79cbae8021a3a541d04 assets\testingmod\models\item\plat_leggings_amethyst_trim.json
