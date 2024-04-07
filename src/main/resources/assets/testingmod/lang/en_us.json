@@ -20,6 +20,8 @@
   "block.testingmod.plat_block": "Platinium Block",
   "block.testingmod.plat_ore": "Platinium Ore",
 
+  "sounds.testingmod.ore_detector_found_ore": "Ore Found!",
+
   "itemgroup.faces": "Faces",
   "itemgroup.platinium": "Platinium"
 }

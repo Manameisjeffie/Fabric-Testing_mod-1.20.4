@@ -1,0 +1,8 @@
+{
+  "ore_detector_found_ore": {
+    "subtitle": "sounds.testingmod.ore_detector_found_ore",
+    "sounds": [
+      "testingmod:ore_detector_found_ore"
+    ]
+  }
+}

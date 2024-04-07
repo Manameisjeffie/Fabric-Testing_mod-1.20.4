@@ -1,5 +1,6 @@
 package net.jeffie.testingmod.item.custom;
 
+import net.jeffie.testingmod.sound.ModSounds;
 import net.jeffie.testingmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -10,7 +11,11 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.registry.Registries;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
@@ -50,13 +55,15 @@ public class OreDetectorItem extends Item {
                             user.sendMessage(Text.literal(blockState.getBlock().asItem().getName().getString() + " has been found in §l§nX: " + bPos.getX() + " Y: " + bPos.getY() + " Z: " + bPos.getZ()).withColor(chooseColor(blockState)), false);
                             user.getStackInHand(hand).damage(1, user, playerEntity -> playerEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
                         }
-                        else
+                        /*else
                         {
                             user.sendMessage(Text.literal("No Ore Found :c").withColor(Colors.RED), false);
-                        }
+                        }*/
                     }
                 }
             }
+            /*world.playSound(null, bPos, ModSounds.ORE_DETECTOR_FOUND_ORE,
+                    SoundCategory.BLOCKS, 1f, 1f);*/
         }
         return TypedActionResult.success(user.getStackInHand(hand));
     }
